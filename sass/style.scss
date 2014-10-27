@@ -1,4 +1,59 @@
-@import 'bootstrap3.2';
+//@import "bootstrap/navbar";
+
+
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/button-groups";
+@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/pagination";
+@import "bootstrap/pager";
+@import "bootstrap/labels";
+@import "bootstrap/badges";
+@import "bootstrap/jumbotron";
+@import "bootstrap/thumbnails";
+@import "bootstrap/alerts";
+@import "bootstrap/progress-bars";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/panels";
+@import "bootstrap/responsive-embed";
+@import "bootstrap/wells";
+@import "bootstrap/close";
+
+// Components w/ JavaScript
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+@import "bootstrap/popovers";
+@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+
 
 
 $base-color: #880000;
@@ -25,9 +80,18 @@ a {
   left: 0;
   right: 0;
   border: 0;
-  li {
-    /*background-color: rgba(255,255,255,.7);*/
+  .active {
+    background-color: opacify($translucent-white,1);
+    color: $base-color;
   }
+  li {
+    background-color: darken(opacify($translucent-white,.2), 10%);
+  }
+
+}
+
+.navbar-default {
+  color: green;
 }
 
 .navbar-default.transparent {
@@ -41,7 +105,7 @@ a {
 }
 
 @media (max-width: 766px) {
-  .navbar-default .navbar-nav > .home-static {
+  .navbar-default.navbar-nav > .home-static {
     background-color: $translucent-white;
   }
 }
@@ -58,11 +122,16 @@ a {
 
 /*carousel*/
 
-.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7 {
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
+$max-frame: 8;
+@for $i from 1 to $max-frame+1 {
+  .slide#{$i} {
+    background-image: url(../Pictures/#{$i}.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+  }
 }
+
 
 /* HACK for vh on iOS ################################ https://gist.github.com/pburtchaell/e702f441ba9b3f76f587*/
 /**
@@ -95,12 +164,6 @@ a {
 
 /*end hack */
 
-$max-frame: 8;
-@for $i from 1 to $max-frame+1 {
-  .slide#{$i} {
-    background-image: url(../Pictures/Carosel/#{$i}.jpg);
-  }
-}
 
 
 
