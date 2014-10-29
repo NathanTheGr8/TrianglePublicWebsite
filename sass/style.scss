@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: padding 0.3s;
     border: none;
     .navbar-brand {
-      font-size: 2em;
+      font-size: 1.8em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: lighten($gray,10%);
     padding: 10px 0;
     .navbar-brand {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
 }
