@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
-  background-color: $black;
+  background-color: lighten($gray,10%);
   border-color: transparent;
   .navbar-brand {
     color: $brand-primary;
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
   .navbar-default {
-    background-color: transparent;
+    background-color: lighten($gray,10%);
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .navbar-default.navbar-shrink {
-    background-color: $black;
+    background-color: lighten($gray,10%);
     padding: 10px 0;
     .navbar-brand {
       font-size: 1.5em;
@@ -162,10 +162,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-wrapper {
-  background-color: #ffffff;
-  z-index: 5;
-}
 
 
 header {
@@ -178,9 +174,7 @@ header {
   @include background-cover;
   text-align: center;
   color: white;
-  .grey {
 
-  }
   .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -203,12 +197,7 @@ header {
 
 @media(min-width:768px) {
   header {
-    .grey {
-      height: 100px;
-      background-color: $gray;
-      top: 0;
-      margin: 0;
-    }
+
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
@@ -256,7 +245,13 @@ section {
 }
 
 //About Section
-
+#about {
+  background: url("../img/houseLight2.jpg");
+  @include background-cover;
+  p {
+    text-indent: 50px;
+  }
+}
 .about-heading {
   margin: 15px 0;
   text-transform: none;
@@ -343,6 +338,13 @@ section {
 
 #scholarship {
   text-align: center;
+  p {
+    text-align: left;
+    text-indent: 50px;
+  }
+  button {
+    margin-top: 3em;
+  }
 
 }
 
