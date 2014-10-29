@@ -312,6 +312,12 @@ section#contact {
   section#contact .section-heading {
     color: #000000; }
 
+#map-canvas {
+  height: 400px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
 /*
 footer {
 	padding: 25px 0;
