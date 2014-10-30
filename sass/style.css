@@ -354,6 +354,8 @@ footer {
   background-color: #ffffff;
   text-align: center;
   text: #ffffff; }
+  footer p {
+    padding-top: 25px; }
 
 ul.social-buttons {
   margin-bottom: 0; }
