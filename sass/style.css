@@ -311,13 +311,27 @@ section#contact {
   background-color: #f7f7f7; }
   section#contact .section-heading {
     color: #000000; }
+  section#contact .map {
+    height: 350px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; }
+  section#contact .contact-info {
+    text-align: center; }
+  @media (min-width: 768px) {
+    section#contact .map {
+      height: 500px; }
+    section#contact .contact-info {
+      text-align: left; } }
 
+/*
 #map-canvas {
   height: 400px;
   width: 100%;
   margin: 0px;
-  padding: 0px; }
-
+  padding: 0px;
+}
+*/
 /*
 footer {
 	padding: 25px 0;
