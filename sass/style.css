@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white; }
 
 .navbar-default {
-  background-color: #919191;
+  background-color: rgba(145, 145, 145, 0.7);
   border-color: transparent; }
   .navbar-default .navbar-brand {
     color: #991010;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: #919191;
+    background-color: rgba(145, 145, 145, 0.7);
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
       border-radius: 3px; }
 
   .navbar-default.navbar-shrink {
-    background-color: #919191;
+    background-color: rgba(145, 145, 145, 0.7);
     padding: 10px 0; }
     .navbar-default.navbar-shrink .navbar-brand {
       font-size: 1.4em; } }

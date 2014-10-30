@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
-  background-color: lighten($gray,10%);
+  background-color: transparentize(lighten($gray,10%),.3);
   border-color: transparent;
   .navbar-brand {
     color: $brand-primary;
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
   .navbar-default {
-    background-color: lighten($gray,10%);
+    background-color: transparentize(lighten($gray,10%),.3);
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .navbar-default.navbar-shrink {
-    background-color: lighten($gray,10%);
+    background-color: transparentize(lighten($gray,10%),.3);
     padding: 10px 0;
     .navbar-brand {
       font-size: 1.4em;
